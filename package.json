@@ -11,7 +11,7 @@
     "build": "tsc",
     "clean": "rm -rf ./lib/",
     "lint": "eslint ./src/ --fix",
-    "start": "TS_NODE_FILES=true ts-node ./src/cli.ts",
+    "start": "ts-node ./src/main.ts",
     "test:watch": "jest --watch",
     "test": "jest",
     "typecheck": "tsc --noEmit"
@@ -37,9 +37,6 @@
     "semantic-release",
     "codecov"
   ],
-  "dependencies": {
-    "commander": "^7.2.0"
-  },
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^12.20.11",
